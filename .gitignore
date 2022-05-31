@@ -1,0 +1,19 @@
+# package directories
+node_modules
+jspm_packages
+
+# Serverless directories
+.serverless
+
+# Typescript
+/.build/
+
+# Intellij
+/.idea/
+
+# Test coverage
+/coverage/
+/.nyc_output/
+
+# Local settings
+resources/settings/settings.local.yml

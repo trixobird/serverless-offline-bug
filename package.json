@@ -1,0 +1,43 @@
+{
+  "name": "serverless-offline-bug",
+  "version": "1.0.0",
+  "description": "Serverless aws-nodejs-typescript template",
+  "main": "serverless.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=14.15.0"
+  },
+  "dependencies": {
+    "@middy/core": "^3.0.3",
+    "@middy/http-json-body-parser": "^3.0.3",
+    "@mikro-orm/core": "^5.1.4",
+    "@mikro-orm/migrations": "^5.1.4",
+    "@mikro-orm/postgresql": "^5.1.4",
+    "@mikro-orm/reflection": "^5.1.4",
+    "@mikro-orm/seeder": "^5.1.4"
+  },
+  "devDependencies": {
+    "@mikro-orm/cli": "^5.1.4",
+    "@serverless/typescript": "^3.18.0",
+    "@types/aws-lambda": "^8.10.97",
+    "@types/node": "^17.0.36",
+    "json-schema-to-ts": "^5.2.3",
+    "serverless": "^3.18.2",
+    "serverless-offline": "^8.8.0",
+    "serverless-plugin-typescript": "^2.1.2",
+    "serverless-tscpaths": "^0.0.7",
+    "ts-node": "^10.8.0",
+    "tsconfig-paths": "^4.0.0",
+    "typescript": "^4.7.2"
+  },
+  "author": "The serverless webpack authors (https://github.com/elastic-coders/serverless-webpack)",
+  "license": "MIT",
+  "mikro-orm": {
+    "useTsNode": true,
+    "configPaths": [
+      "./src/mikro-orm.config.ts"
+    ]
+  }
+}
